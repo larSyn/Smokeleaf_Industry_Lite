@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=== MSI Research Projects ===-->
+
+	<ResearchProjectDef>
+		<defName>SmokeleafCultivation</defName>
+		<label>smokeleaf cultivation</label>
+		<description>The process of seperating the parts of the smokeleaf plant. Produces smokeleaf buds, seeds and hemp fibers. Allows joints to be rolled.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>MSI</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>SmokeleafProcessing</defName>
+		<label>smokeleaf processing</label>
+		<description>The cooks have been experimenting...with some rather interesting results.  Edibles are now possible.  It has also been noticed that the fibers of the smokeleaf plant might be able to be used to make a some new materials, if we had the proper tools to use. A new building material is also devised.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>SmokeleafCultivation</li>
+		</prerequisites>
+		<tab>MSI</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>IndustrialSmokeleafCultivation</defName>
+		<label>industrial smokeleaf cultivation</label>
+		<description>The cultivation table is developed, letting workers process smokeleaf in larger quantities and in new forms.  A storage facility is made for easier access to trimming tools.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SmokeleafCultivation</li>
+			<li>Electricity</li>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>MSI</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>IndustrialSmokeleafProcessing</defName>
+		<label>industrial smokeleaf processing</label>
+		<description>A new fuel is created from the fibers and seeds of smokeleaf.  The cooks have also learned a few new recipes. And a potential new medicine is discovered.</description>
+		<baseCost>1250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>IndustrialSmokeleafCultivation</li>
+			<li>SmokeleafProcessing</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>MSI</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>SmokeleafPharmacology</defName>
+		<label>smokeleaf pharmacology</label>
+		<description>Researchers isolate the beneficial compounds of Smokeleaf and are able to apply them in modern medical methods with no ill side effects.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>IndustrialSmokeleafCultivation</li>
+			<li>IndustrialSmokeleafProcessing</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSI</tab>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

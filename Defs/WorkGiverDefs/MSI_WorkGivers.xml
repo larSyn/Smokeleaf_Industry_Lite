@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--========== Cultivation Bench ==========-->
+  
+	  <WorkGiverDef>
+		<defName>DoBillsCultivationBench</defName>
+		<label>produce smokeleaf products at the cultivation bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+			<workTags>
+				<li>Crafting</li>
+			</workTags>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+		  <li>PoweredCultivationBench</li>
+		</fixedBillGiverDefs>
+		<verb>produce smokeleaf products</verb>
+		<gerund>producing smokeleaf products at</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
+  
+</Defs>
