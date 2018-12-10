@@ -249,7 +249,7 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>AdvancedSmokeleafCultivation</li>
+      <li>IndustrialSmokeleafCultivation</li>
       <li>Electricity</li>
     </researchPrerequisites>
     <designationCategory>Production</designationCategory>
