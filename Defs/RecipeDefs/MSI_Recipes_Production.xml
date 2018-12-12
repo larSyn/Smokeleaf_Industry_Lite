@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--========== Trim Smokeleaf ==========-->
+
+  	<RecipeDef>
+		<defName>AutoTrimSmokeleaf</defName>
+		<label>auto trim smokeleaf (x25)</label>
+		<description>Trim large amounts of smokeleaf very quickly.</description>
+		<jobString>Trimming Smokeleaf.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>500</workAmount>
+  		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempFiber>25</HempFiber>
+			<SmokeleafBuds>25</SmokeleafBuds>
+			<SmokeleafSeed>25</SmokeleafSeed>
+		</products>
+		<recipeUsers>
+			<li>SmokeleafAutoTrimmer</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkAutoTrimSmokeleaf</defName>
+		<label>auto trim smokeleaf (x75)</label>
+		<description>Trim large amounts of smokeleaf very quickly.</description>
+		<jobString>Trimming Smokeleaf.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>1250</workAmount>
+  		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempFiber>75</HempFiber>
+			<SmokeleafBuds>75</SmokeleafBuds>
+			<SmokeleafSeed>75</SmokeleafSeed>
+		</products>
+		<recipeUsers>
+			<li>SmokeleafAutoTrimmer</li>
+		</recipeUsers>
+	</RecipeDef>
+
 	<!--========== Hand Trim Smokeleaf-Crafting Spot ==========-->
 	
 	<RecipeDef>
